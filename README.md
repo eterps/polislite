@@ -51,8 +51,14 @@ I focused on small incremental improvements through separation of concerns.
 In the branch `extract-data-and-output-rendering-to-files`, I separated the
 data handling and output rendering. Subsequently, in the branch `extract-lib`,
 I isolated the core algorithm into a dedicated library file.
+In the branch `plotting` I added a script that plots the user's opinions on a
+2D plane.
 
 The full changes can be reviewed in the associated pull requests.
 
 I prefer small steps and improving abstraction before focusing more on
 feature completeness for the algorithm.
+
+## Plot example
+
+![Image of a the user's opinions on a 2D plane](plot_example.png)
