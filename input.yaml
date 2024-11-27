@@ -1,0 +1,20 @@
+statements:
+- Climate change requires immediate action
+- Nuclear power is necessary for clean energy
+- Carbon tax should be implemented globally
+- Individual actions matter for sustainability
+- Companies should be held liable for emissions
+
+votes:
+  # Group 1: Environmental purists (anti-nuclear)
+  user1: [agree, disagree, agree, agree, agree]
+  user2: [agree, disagree, agree, agree, agree]
+  user3: [agree, disagree, agree, agree, agree]
+  # Group 2: Tech-focused environmentalists (pro-nuclear)
+  user4: [agree, agree, agree, disagree, agree]
+  user5: [agree, agree, agree, disagree, agree]
+  user6: [agree, agree, agree, disagree, agree]
+  # Group 3: Business-oriented (anti-regulation)
+  user7: [agree, agree, disagree, disagree, disagree]
+  user8: [agree, agree, disagree, disagree, disagree]
+  user9: [agree, agree, disagree, disagree, disagree]

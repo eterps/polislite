@@ -1,0 +1,21 @@
+Consensus Statements:
+{%- for stmt, score, agree in consensus_data %}
+{%- if agree < 0.5 %}
+- {{ stmt }} ({{ 'strong agreement' if score > 0.5 else 'strong disagreement' }})
+{%- endif %}
+{%- endfor %}
+
+Divisive Statements:
+{%- for stmt, agree in divisive_data %}
+{%- if agree >= 0.5 %}
+- {{ stmt }}
+{%- endif %}
+{%- endfor %}
+
+Group Positions:
+{%- for grp_id, positions in group_data.items() %}
+Group {{ grp_id }} characteristics:
+{%- for stmt, opinion in positions %}
+- {{ 'strongly agrees with' if opinion > 0 else 'strongly disagrees with' }}: {{ stmt }}
+{%- endfor %}
+{%- endfor %}
