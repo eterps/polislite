@@ -25,13 +25,17 @@ def generate_report(template_path, analysis_results):
     )
 
 
+def analyze_opinions(statements, votes):
+    analyzer = OpinionAnalyzer()
+    return analyzer.analyze(votes, statements)
+
+
 def main(yaml_file):
     # Load and prepare data
     statements, votes = load_from_yaml(yaml_file)
 
     # Analyze opinions
-    analyzer = OpinionAnalyzer()
-    results = analyzer.analyze(votes, statements)
+    results = analyze_opinions(statements, votes)
 
     # Generate and print report
     template_path = Path(__file__).parent / "report_template.j2"

@@ -45,6 +45,10 @@ A lightweight Pol.is-like.
     - strongly agrees with: Companies should be held liable for emissions
 </details>
 
+## Run tests
+
+    behave
+
 ## Status
 
 I focused on small incremental improvements through separation of concerns.
